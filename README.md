@@ -19,5 +19,5 @@ I started this project with a thought of learning functional/reactive programmin
 4) Can I contribute ?
 
 
-Sure that's why this project is on GitHub :)
+Sure that's why this project is on GitHub :) Feel free to write - starub@gmail.com
 
