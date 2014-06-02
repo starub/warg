@@ -16,7 +16,6 @@ The potential complexity of such platform is enermous and is limited only by hum
  - Define set of base/core interfaces for client-server interaction (that is player <-> world)
  - Implement basic tech. stack for API, DB and other integrations.
  - Implement a small console-based client-server interaction, similar to MUD.
- - 
  
 For those goals, I plan to implement example of using warg - I will create a primitive CRPG, which would utilize a very basic concepts loosely inspired from DnD board games.
 
