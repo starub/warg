@@ -10,7 +10,6 @@ warg is thought to be an aid for developing role playing games, without troublin
 
 It will try to unite and automate most common in-game tasks like handling most of game calculations (i.e. damage formulas, experience, etc.), tracking state of player progress, define interactive objects, issuing global events, handling social interactions and many more.
 
-
 The potential complexity of such platform is enermous and is limited only by human imagination. In that regard a small scope of functionality should be defined first, some kind of primary goal to achieve. So for version 0.0.0.1 :) it would be sufficient to achieve the following :
 
  - Define set of base/core interfaces for client-server interaction (that is player <-> world)
