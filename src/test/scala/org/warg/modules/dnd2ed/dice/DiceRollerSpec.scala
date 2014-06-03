@@ -26,10 +26,19 @@ class DiceRollerSpec extends FlatSpec {
     assert(roll >= 5)
   }
 
-  it should "raise exception when attempting rolling dice 0 times" in {
-
+  it should "raise exception if no dice is specified in generic roll() method" in {
     try {
-      DiceRoller.roll(0, null)
+      DiceRoller.roll(1, null)
+      fail
+    } catch {
+      case e: IllegalArgumentException => assert("requirement failed: dice should be defined" === e.getMessage())
+    }
+
+  }
+
+  it should "raise exception when attempting rolling dice 0 times" in {
+    try {
+      DiceRoller.roll(0, D6Dice)
       fail
     } catch {
       case e: IllegalArgumentException => assert("requirement failed: roll count should be greater than 0" === e.getMessage())
