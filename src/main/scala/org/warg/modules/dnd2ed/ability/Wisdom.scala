@@ -18,7 +18,7 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Wisdom extends AbstractAbility {
+class Wisdom(value: Int) extends AbstractAbility(value) {
 
   @Override
   def getName(): String = {

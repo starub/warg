@@ -16,13 +16,24 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.ability
+package org.warg.modules.dnd2ed.generators
 
-class Intelligence(value: Int) extends AbstractAbility(value) {
+import org.warg.modules.dnd2ed.character.Character
+import org.warg.modules.dnd2ed.dice.DiceRoller
+
+object AbilityGenerator extends Generator[Character] {
 
   @Override
-  def getName(): String = {
-    "INT"
-  }
+  def generate(character: Character): Character = {
 
+    character.strength.setCurrentValue(DiceRoller.d6(3))
+    character.dexterity.setCurrentValue(DiceRoller.d6(3))
+    character.constitution.setCurrentValue(DiceRoller.d6(3))
+
+    character.intelligence.setCurrentValue(DiceRoller.d6(3))
+    character.wisdom.setCurrentValue(DiceRoller.d6(3))
+    character.charisma.setCurrentValue(DiceRoller.d6(3))
+
+    character
+  }
 }

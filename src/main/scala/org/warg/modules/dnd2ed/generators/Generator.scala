@@ -16,13 +16,10 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.ability
+package org.warg.modules.dnd2ed.generators
 
-class Intelligence(value: Int) extends AbstractAbility(value) {
+trait Generator[T] {
 
-  @Override
-  def getName(): String = {
-    "INT"
-  }
+  def generate(entity: T): T
 
 }

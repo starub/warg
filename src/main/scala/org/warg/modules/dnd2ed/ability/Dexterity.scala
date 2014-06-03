@@ -18,7 +18,7 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Dexterity extends AbstractAbility {
+class Dexterity(value: Int) extends AbstractAbility(value) {
 
   @Override
   def getName(): String = {

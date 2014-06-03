@@ -18,7 +18,7 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Strength extends AbstractAbility {
+class Strength(value: Int) extends AbstractAbility(value) {
 
   @Override
   def getName(): String = {

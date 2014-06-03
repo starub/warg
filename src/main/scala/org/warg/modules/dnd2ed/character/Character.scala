@@ -18,6 +18,25 @@
  */
 package org.warg.modules.dnd2ed.character
 
+import org.warg.modules.dnd2ed.ability.Charisma
+import org.warg.modules.dnd2ed.ability.Constitution
+import org.warg.modules.dnd2ed.ability.Dexterity
+import org.warg.modules.dnd2ed.ability.Intelligence
+import org.warg.modules.dnd2ed.ability.Strength
+import org.warg.modules.dnd2ed.ability.Wisdom
+
 trait Character {
+
+  val strength: Strength
+
+  val dexterity: Dexterity
+
+  val constitution: Constitution
+
+  val intelligence: Intelligence
+
+  val wisdom: Wisdom
+
+  val charisma: Charisma
 
 }

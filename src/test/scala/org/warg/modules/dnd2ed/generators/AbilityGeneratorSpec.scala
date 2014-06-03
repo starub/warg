@@ -16,13 +16,27 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.ability
+package org.warg.modules.dnd2ed.generators
 
-class Intelligence(value: Int) extends AbstractAbility(value) {
+import org.scalatest.FlatSpec
+import org.warg.modules.dnd2ed.character.DefaultCharacter
 
-  @Override
-  def getName(): String = {
-    "INT"
+class AbilityGeneratorSpec extends FlatSpec {
+
+  behavior of "standard character ability generator"
+
+  it should "generate abstract character with 6 non-zero abilities" in {
+
+    var character = AbilityGenerator.generate(new DefaultCharacter)
+
+    assert(character.strength.getCurrentValue > 0)
+    assert(character.dexterity.getCurrentValue > 0)
+    assert(character.constitution.getCurrentValue > 0)
+
+    assert(character.intelligence.getCurrentValue > 0)
+    assert(character.wisdom.getCurrentValue > 0)
+    assert(character.charisma.getCurrentValue > 0)
+
   }
 
 }
