@@ -9,10 +9,12 @@ abstract class AbstractAbility extends Ability {
     this.currentValue = currentValue;
   }
 
+  @Override
   def getCurrentValue(): Int = {
     currentValue
   }
 
+  @Override
   def setCurrentValue(value: Int) = {
     this.currentValue = value
   }
