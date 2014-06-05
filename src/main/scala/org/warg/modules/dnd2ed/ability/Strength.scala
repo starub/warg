@@ -18,7 +18,7 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Strength extends Ability {
+final object Strength extends Ability {
 
   override final val Name = "Strength"
 

@@ -26,22 +26,23 @@ import org.warg.modules.dnd2ed.ability.Strength
 import org.warg.modules.dnd2ed.ability.Wisdom
 import org.warg.modules.dnd2ed.race.Human
 import org.warg.modules.dnd2ed.race.Race
+import org.warg.modules.dnd2ed.ability.Charisma
 
 final class Character {
 
-  final val Str: Strength = new Strength
+  final val Str = Strength
 
-  final val Dex: Dexterity = new Dexterity
+  final val Dex = Dexterity
 
-  final val Con: Constitution = new Constitution
+  final val Con = Constitution
 
-  final val Int: Intelligence = new Intelligence
+  final val Int = Intelligence
 
-  final val Wis: Wisdom = new Wisdom
+  final val Wis = Wisdom
 
-  final val Cha: Charisma = new Charisma
+  final val Cha = Charisma
 
-  final val abilities = Map((Str.Name, Str), (Dex.Name, Dex), (Con.Name, Con), (Int.Name, Int), (Wis.Name, Wis), (Cha.Name, Cha))
+  final val abilities = List(Str, Dex, Con, Int, Wis, Cha)
 
   var race: Race = Human
 

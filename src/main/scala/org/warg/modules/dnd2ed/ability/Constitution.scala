@@ -18,7 +18,7 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Constitution extends Ability {
+final object Constitution extends Ability {
 
   override final val Name = "Constitution"
 

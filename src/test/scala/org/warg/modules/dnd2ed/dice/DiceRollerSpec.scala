@@ -49,7 +49,7 @@ class DiceRollerSpec extends FlatSpec {
       DiceRoller.roll(1, null)
       fail
     } catch {
-      case e: IllegalArgumentException => assert("requirement failed: dice should be defined" === e.getMessage())
+      case e: IllegalArgumentException => assert("requirement failed: Dice is null" === e.getMessage())
     }
 
   }
@@ -59,7 +59,7 @@ class DiceRollerSpec extends FlatSpec {
       DiceRoller.roll(0, D6Dice)
       fail
     } catch {
-      case e: IllegalArgumentException => assert("requirement failed: roll count should be greater than 0" === e.getMessage())
+      case e: IllegalArgumentException => assert("requirement failed: Roll count <= 0" === e.getMessage())
     }
 
   }

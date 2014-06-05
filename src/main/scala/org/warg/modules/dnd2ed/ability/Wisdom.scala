@@ -18,7 +18,7 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Wisdom extends Ability {
+final object Wisdom extends Ability {
 
   override final val Name = "Wisdom"
 

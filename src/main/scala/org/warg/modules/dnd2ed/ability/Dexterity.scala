@@ -18,7 +18,7 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Dexterity extends Ability {
+final object Dexterity extends Ability {
 
   override final val Name = "Dexterity"
 

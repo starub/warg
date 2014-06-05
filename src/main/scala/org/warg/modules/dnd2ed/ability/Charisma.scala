@@ -18,7 +18,7 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Charisma extends Ability {
+final object Charisma extends Ability {
 
   override final val Name = "Charisma"
 

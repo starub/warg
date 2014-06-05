@@ -30,8 +30,8 @@ final object DiceRoller {
 
   final def roll(times: Int, dice: Dice) = {
 
-    require(times > 0, "roll count should be greater than 0")
-    require(dice != null, "dice should be defined")
+    require(times > 0, "Roll count <= 0")
+    require(dice != null, "Dice is null")
 
     var total = 0
 

@@ -52,4 +52,8 @@ trait Race {
   val WisAdj = 0
   val ChaAdj = 0
 
+  override def toString = {
+    Name
+  }
+
 }
