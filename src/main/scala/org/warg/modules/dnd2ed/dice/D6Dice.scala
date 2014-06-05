@@ -18,8 +18,8 @@
  */
 package org.warg.modules.dnd2ed.dice
 
-object D6Dice extends Dice {
+final object D6Dice extends Dice {
 
-  override val sides = 1 to 6
+  override final val sides = 1 to 6
 
 }

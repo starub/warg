@@ -20,7 +20,7 @@ package org.warg.modules.dnd2ed.ability
 
 class Strength extends Ability {
 
-  val NAME = "STR"
+  final val Name = "Strength"
 
   var score: Int = 0
 

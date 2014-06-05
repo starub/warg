@@ -20,7 +20,7 @@ package org.warg.modules.dnd2ed.ability
 
 class Constitution extends Ability {
 
-  val NAME = "CON"
+  final val Name = "Constitution"
 
   var score: Int = 0
 }

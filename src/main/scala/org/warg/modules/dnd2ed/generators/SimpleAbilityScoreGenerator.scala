@@ -20,9 +20,9 @@ package org.warg.modules.dnd2ed.generators
 
 import org.warg.modules.dnd2ed.dice.DiceRoller
 
-object SimpleAbilityScoreGenerator extends AbilityScoreGenerator {
+final object SimpleAbilityScoreGenerator extends AbilityScoreGenerator {
 
-  override def generate: Int = {
+  override final def generate: Int = {
     DiceRoller.d6(3)
   }
 }

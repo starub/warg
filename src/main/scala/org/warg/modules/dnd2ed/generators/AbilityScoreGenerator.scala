@@ -20,6 +20,6 @@ package org.warg.modules.dnd2ed.generators
 
 trait AbilityScoreGenerator {
 
-  def generate: Int
+   def generate: Int
   
 }

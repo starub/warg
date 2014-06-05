@@ -16,9 +16,15 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.dice
+package org.warg.modules.dnd2ed.race
 
-final object D20Dice extends Dice {
+import org.warg.modules.dnd2ed.ability.Ability
 
-  override final val sides = 1 to 20
+final object RaceCalculator {
+
+  final def calculateRace(abilities: Map[String, Ability]): Race = {
+    //TODO, implement
+    Human
+  }
+
 }

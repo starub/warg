@@ -16,9 +16,35 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.dice
+package org.warg.modules.dnd2ed.race
 
-final object D20Dice extends Dice {
+final object Gnome extends Race {
 
-  override final val sides = 1 to 20
+  override final val Name = "Gnome"
+
+  // Racial Ability Requirements
+
+  override final val MinStr = 6
+  override final val MaxStr = 18
+
+  override final val MinDex = 3
+  override final val MaxDex = 18
+
+  override final val MinCon = 8
+  override final val MaxCon = 18
+
+  override final val MinInt = 6
+  override final val MaxInt = 18
+
+  override final val MinWis = 3
+  override final val MaxWis = 18
+
+  override final val MinCha = 3
+  override final val MaxCha = 18
+
+  // Racial Ability Adjustments
+
+  override final val IntAdj = 1
+  override final val WisAdj = -1
+
 }

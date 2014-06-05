@@ -18,17 +18,17 @@
  */
 package org.warg.modules.dnd2ed.dice
 
-object DiceRoller {
+final object DiceRoller {
 
-  def d20(times: Int) = {
+  final def d20(times: Int) = {
     roll(times, D20Dice)
   }
 
-  def d6(times: Int) = {
+  final def d6(times: Int) = {
     roll(times, D6Dice)
   }
 
-  def roll(times: Int, dice: Dice) = {
+  final def roll(times: Int, dice: Dice) = {
 
     require(times > 0, "roll count should be greater than 0")
     require(dice != null, "dice should be defined")

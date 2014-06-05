@@ -20,7 +20,7 @@ package org.warg.modules.dnd2ed.ability
 
 class Dexterity extends Ability {
 
-  val NAME = "DEX"
+  final val Name = "Dexterity"
 
   var score: Int = 0
 

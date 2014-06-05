@@ -20,7 +20,7 @@ package org.warg.modules.dnd2ed.ability
 
 class Wisdom extends Ability {
 
-  val NAME = "WIS"
+  final val Name = "Wisdom"
 
   var score: Int = 0
 

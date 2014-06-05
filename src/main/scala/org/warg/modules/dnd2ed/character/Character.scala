@@ -24,24 +24,25 @@ import org.warg.modules.dnd2ed.ability.Dexterity
 import org.warg.modules.dnd2ed.ability.Intelligence
 import org.warg.modules.dnd2ed.ability.Strength
 import org.warg.modules.dnd2ed.ability.Wisdom
-import org.warg.modules.dnd2ed.ability.Dexterity
-import org.warg.modules.dnd2ed.ability.Constitution
-import org.warg.modules.dnd2ed.ability.Intelligence
-import org.warg.modules.dnd2ed.ability.Wisdom
-import org.warg.modules.dnd2ed.ability.Charisma
+import org.warg.modules.dnd2ed.race.Human
+import org.warg.modules.dnd2ed.race.Race
 
-class Character {
+final class Character {
 
-  val strength: Strength = new Strength
+  final val Str: Strength = new Strength
 
-  val dexterity: Dexterity = new Dexterity
+  final val Dex: Dexterity = new Dexterity
 
-  val constitution: Constitution = new Constitution
+  final val Con: Constitution = new Constitution
 
-  val intelligence: Intelligence = new Intelligence
+  final val Int: Intelligence = new Intelligence
 
-  val wisdom: Wisdom = new Wisdom
+  final val Wis: Wisdom = new Wisdom
 
-  val charisma: Charisma = new Charisma
+  final val Cha: Charisma = new Charisma
+
+  final val abilities = Map((Str.Name, Str), (Dex.Name, Dex), (Con.Name, Con), (Int.Name, Int), (Wis.Name, Wis), (Cha.Name, Cha))
+
+  var race: Race = Human
 
 }

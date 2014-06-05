@@ -20,7 +20,7 @@ package org.warg.modules.dnd2ed.ability
 
 class Charisma extends Ability {
 
-  val NAME = "CHA"
+  final val Name = "Charisma"
 
   var score: Int = 0
 

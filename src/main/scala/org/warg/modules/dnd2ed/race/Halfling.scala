@@ -16,9 +16,35 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.dice
+package org.warg.modules.dnd2ed.race
 
-final object D20Dice extends Dice {
+final object Halfling extends Race {
 
-  override final val sides = 1 to 20
+  override final val Name = "Halfling"
+
+  // Racial Ability Requirements
+
+  override final val MinStr = 7
+  override final val MaxStr = 18
+
+  override final val MinDex = 7
+  override final val MaxDex = 18
+
+  override final val MinCon = 10
+  override final val MaxCon = 18
+
+  override final val MinInt = 6
+  override final val MaxInt = 18
+
+  override final val MinWis = 3
+  override final val MaxWis = 17
+
+  override final val MinCha = 3
+  override final val MaxCha = 18
+
+  // Racial Ability Adjustments
+
+  override final val DexAdj = 1
+  override final val StrAdj = -1
+
 }

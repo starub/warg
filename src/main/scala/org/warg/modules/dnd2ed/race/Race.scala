@@ -16,9 +16,40 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.dice
+package org.warg.modules.dnd2ed.race
 
-final object D20Dice extends Dice {
+trait Race {
 
-  override final val sides = 1 to 20
+  val Name = "Generic"
+
+  // Racial Ability Requirements
+
+  val MinStr = 3
+  val MaxStr = 18
+
+  val MinDex = 3
+  val MaxDex = 18
+
+  val MinCon = 3
+  val MaxCon = 18
+
+  val MinInt = 3
+  val MaxInt = 18
+
+  val MinWis = 3
+  val MaxWis = 18
+
+  val MinCha = 3
+  val MaxCha = 18
+
+  // Racial Ability Adjustments
+
+  val StrAdj = 0
+  val DexAdj = 0
+  val ConAdj = 0
+
+  val IntAdj = 0
+  val WisAdj = 0
+  val ChaAdj = 0
+
 }
