@@ -18,11 +18,10 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Strength(value: Int) extends AbstractAbility(value) {
+class Strength extends Ability {
 
-  @Override
-  def getName(): String = {
-    "STR"
-  }
+  val NAME = "STR"
+
+  var score: Int = 0
 
 }

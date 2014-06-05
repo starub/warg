@@ -16,25 +16,10 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.ability
+package org.warg.modules.dnd2ed.generators
 
-abstract class AbstractAbility extends Ability {
+trait AbilityScoreGenerator {
 
-  private var currentValue: Int = 0
-
-  def this(currentValue: Int) = {
-    this()
-    this.currentValue = currentValue;
-  }
-
-  @Override
-  def getCurrentValue(): Int = {
-    currentValue
-  }
-
-  @Override
-  def setCurrentValue(value: Int) = {
-    this.currentValue = value
-  }
-
+  def generate: Int
+  
 }

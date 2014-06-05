@@ -18,11 +18,9 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Constitution(value: Int) extends AbstractAbility(value) {
+class Constitution extends Ability {
 
-  @Override
-  def getName(): String = {
-    "CON"
-  }
+  val NAME = "CON"
 
+  var score: Int = 0
 }

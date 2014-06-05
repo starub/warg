@@ -16,27 +16,13 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.character
+package org.warg.modules.dnd2ed.generators
 
-import org.warg.modules.dnd2ed.ability.Charisma
-import org.warg.modules.dnd2ed.ability.Constitution
-import org.warg.modules.dnd2ed.ability.Dexterity
-import org.warg.modules.dnd2ed.ability.Intelligence
-import org.warg.modules.dnd2ed.ability.Strength
-import org.warg.modules.dnd2ed.ability.Wisdom
+import org.warg.modules.dnd2ed.dice.DiceRoller
 
-class DefaultCharacter extends Character {
+object SimpleAbilityScoreGenerator extends AbilityScoreGenerator {
 
-  val strength = new Strength(0)
-
-  val dexterity = new Dexterity(0)
-
-  val constitution = new Constitution(0)
-
-  val intelligence = new Intelligence(0)
-
-  val wisdom = new Wisdom(0)
-
-  val charisma = new Charisma(0)
-
+  override def generate: Int = {
+    DiceRoller.d6(3)
+  }
 }

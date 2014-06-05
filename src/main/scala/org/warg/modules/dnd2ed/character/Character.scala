@@ -24,19 +24,24 @@ import org.warg.modules.dnd2ed.ability.Dexterity
 import org.warg.modules.dnd2ed.ability.Intelligence
 import org.warg.modules.dnd2ed.ability.Strength
 import org.warg.modules.dnd2ed.ability.Wisdom
+import org.warg.modules.dnd2ed.ability.Dexterity
+import org.warg.modules.dnd2ed.ability.Constitution
+import org.warg.modules.dnd2ed.ability.Intelligence
+import org.warg.modules.dnd2ed.ability.Wisdom
+import org.warg.modules.dnd2ed.ability.Charisma
 
-trait Character {
+class Character {
 
-  val strength: Strength
+  val strength: Strength = new Strength
 
-  val dexterity: Dexterity
+  val dexterity: Dexterity = new Dexterity
 
-  val constitution: Constitution
+  val constitution: Constitution = new Constitution
 
-  val intelligence: Intelligence
+  val intelligence: Intelligence = new Intelligence
 
-  val wisdom: Wisdom
+  val wisdom: Wisdom = new Wisdom
 
-  val charisma: Charisma
+  val charisma: Charisma = new Charisma
 
 }

@@ -18,11 +18,10 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Charisma(value: Int) extends AbstractAbility(value) {
+class Charisma extends Ability {
 
-  @Override
-  def getName(): String = {
-    "CHA"
-  }
+  val NAME = "CHA"
+
+  var score: Int = 0
 
 }

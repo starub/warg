@@ -18,11 +18,9 @@
  */
 package org.warg.modules.dnd2ed.ability
 
-class Intelligence(value: Int) extends AbstractAbility(value) {
+class Intelligence extends Ability {
 
-  @Override
-  def getName(): String = {
-    "INT"
-  }
+  val NAME = "INT"
 
+  var score: Int = 0
 }
