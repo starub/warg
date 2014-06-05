@@ -20,7 +20,6 @@ package org.warg.modules.dnd2ed.ability
 
 class Intelligence extends Ability {
 
-  final val Name = "Intelligence"
+  override final val Name = "Intelligence"
 
-  var score: Int = 0
 }

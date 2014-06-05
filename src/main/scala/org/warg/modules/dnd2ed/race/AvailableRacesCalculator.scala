@@ -20,11 +20,11 @@ package org.warg.modules.dnd2ed.race
 
 import org.warg.modules.dnd2ed.ability.Ability
 
-final object RaceCalculator {
+final object AvailableRacesCalculator {
 
-  final def calculateRace(abilities: Map[String, Ability]): Race = {
+  final def findAvailableRaces(abilities: Map[String, Ability]): List[Race] = {
     //TODO, implement
-    Human
+    Nil
   }
 
 }

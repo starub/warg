@@ -20,4 +20,8 @@ package org.warg.modules.dnd2ed.ability
 
 trait Ability {
 
+  val Name = "Generic Ability"
+
+  var score: Int = 0
+
 }

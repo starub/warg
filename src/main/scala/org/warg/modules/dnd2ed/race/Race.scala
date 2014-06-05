@@ -20,7 +20,7 @@ package org.warg.modules.dnd2ed.race
 
 trait Race {
 
-  val Name = "Generic"
+  val Name = "Generic race"
 
   // Racial Ability Requirements
 

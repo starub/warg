@@ -20,8 +20,6 @@ package org.warg.modules.dnd2ed.ability
 
 class Strength extends Ability {
 
-  final val Name = "Strength"
-
-  var score: Int = 0
+  override final val Name = "Strength"
 
 }

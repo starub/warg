@@ -20,7 +20,6 @@ package org.warg.modules.dnd2ed.ability
 
 class Constitution extends Ability {
 
-  final val Name = "Constitution"
+  override final val Name = "Constitution"
 
-  var score: Int = 0
 }
