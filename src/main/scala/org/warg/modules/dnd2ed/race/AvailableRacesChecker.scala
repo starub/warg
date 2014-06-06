@@ -28,19 +28,21 @@ import org.warg.modules.dnd2ed.ability.Wisdom
 
 final object AvailableRacesChecker {
 
-  final def findAvailableRaces(races: List[Race], abilities: List[Ability]): List[Race] = {
+  final def findAvailableRaces(races: Set[Race], abilities: Set[Ability]): Set[Race] = {
 
-    require(races != null && races.length > 0, "Races collection is null or empty")
-    require(abilities != null && abilities.length > 0, "Abilities collection is null or empty")
+    require(races != null && races.size > 0, "Races collection is null or empty")
+    require(abilities != null && abilities.size > 0, "Abilities collection is null or empty")
 
     def isSupported(race: Race, ability: Ability): Boolean = {
       ability.Name match {
-        case Strength.Name => (race.MinStr to race.MaxStr).contains(ability.score)
-        case Dexterity.Name => (race.MinDex to race.MaxDex).contains(ability.score)
-        case Constitution.Name => (race.MinCon to race.MaxCon).contains(ability.score)
-        case Intelligence.Name => (race.MinInt to race.MaxInt).contains(ability.score)
-        case Wisdom.Name => (race.MinWis to race.MaxWis).contains(ability.score)
-        case Charisma.Name => (race.MinCha to race.MaxCha).contains(ability.score)
+        
+        case Strength.Name => race.StrReq.contains(ability.score)
+        case Dexterity.Name => race.DexReq.contains(ability.score)
+        case Constitution.Name => race.ConReq.contains(ability.score)
+        
+        case Intelligence.Name => race.IntReq.contains(ability.score)
+        case Wisdom.Name => race.WisReq.contains(ability.score)
+        case Charisma.Name => race.ChaReq.contains(ability.score)
 
         case _ => throw new IllegalArgumentException("Unknown ability : " + ability.Name)
       }

@@ -42,7 +42,7 @@ final class Character {
 
   final val Cha = Charisma
 
-  final val abilities = List(Str, Dex, Con, Int, Wis, Cha)
+  final val abilities = Set(Str, Dex, Con, Int, Wis, Cha)
 
   var race: Race = Human
 

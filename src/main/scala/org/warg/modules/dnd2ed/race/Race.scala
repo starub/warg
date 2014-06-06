@@ -24,23 +24,17 @@ trait Race {
 
   // Racial Ability Requirements
 
-  val MinStr = 3
-  val MaxStr = 18
+  val StrReq = 3 to 18
 
-  val MinDex = 3
-  val MaxDex = 18
+  val DexReq = 3 to 18
 
-  val MinCon = 3
-  val MaxCon = 18
+  val ConReq = 3 to 18
 
-  val MinInt = 3
-  val MaxInt = 18
+  val IntReq = 3 to 18
 
-  val MinWis = 3
-  val MaxWis = 18
+  val WisReq = 3 to 18
 
-  val MinCha = 3
-  val MaxCha = 18
+  val ChaReq = 3 to 18
 
   // Racial Ability Adjustments
 

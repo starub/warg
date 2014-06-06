@@ -29,27 +29,17 @@ class AvailableRacesCheckerSpec extends FlatSpec {
 
     var dummy: Race = new Race {
 
-      override val MinStr = 5
-      override val MaxStr = 5
+      override val StrReq = 5 to 5
+      override val DexReq = 5 to 5
+      override val ConReq = 5 to 5
 
-      override val MinDex = 5
-      override val MaxDex = 5
-
-      override val MinCon = 5
-      override val MaxCon = 5
-
-      override val MinInt = 5
-      override val MaxInt = 5
-
-      override val MinWis = 5
-      override val MaxWis = 5
-
-      override val MinCha = 5
-      override val MaxCha = 5
+      override val IntReq = 5 to 5
+      override val WisReq = 5 to 5
+      override val ChaReq = 5 to 5
 
     }
 
-    var races: List[Race] = List(Human, dummy)
+    var races: Set[Race] = Set(Human, dummy)
     var character = new Character
 
     character.Str.score = 3
@@ -59,11 +49,10 @@ class AvailableRacesCheckerSpec extends FlatSpec {
     character.Int.score = 3
     character.Cha.score = 3
     character.Wis.score = 3
-    
-    
+
     var result = AvailableRacesChecker.findAvailableRaces(races, character.abilities)
 
-     assert(result.size == 1 && result(0) == Human)
+    assert(result.size == 1 && result.contains(Human))
   }
 
 }

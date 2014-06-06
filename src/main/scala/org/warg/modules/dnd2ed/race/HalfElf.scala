@@ -24,22 +24,12 @@ final object HalfElf extends Race {
 
   // Racial Ability Requirements
 
-  override final val MinStr = 3
-  override final val MaxStr = 18
+  override final val StrReq = 3 to 18
+  override final val DexReq = 6 to 18
+  override final val ConReq = 6 to 18
 
-  override final val MinDex = 6
-  override final val MaxDex = 18
-
-  override final val MinCon = 6
-  override final val MaxCon = 18
-
-  override final val MinInt = 4
-  override final val MaxInt = 18
-
-  override final val MinWis = 3
-  override final val MaxWis = 18
-
-  override final val MinCha = 3
-  override final val MaxCha = 18
+  override final val IntReq = 4 to 18
+  override final val WisReq = 3 to 18
+  override final val ChaReq = 3 to 18
 
 }

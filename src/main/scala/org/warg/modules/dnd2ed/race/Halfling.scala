@@ -24,23 +24,13 @@ final object Halfling extends Race {
 
   // Racial Ability Requirements
 
-  override final val MinStr = 7
-  override final val MaxStr = 18
+  override final val StrReq = 7 to 18
+  override final val DexReq = 7 to 18
+  override final val ConReq = 10 to 18
 
-  override final val MinDex = 7
-  override final val MaxDex = 18
-
-  override final val MinCon = 10
-  override final val MaxCon = 18
-
-  override final val MinInt = 6
-  override final val MaxInt = 18
-
-  override final val MinWis = 3
-  override final val MaxWis = 17
-
-  override final val MinCha = 3
-  override final val MaxCha = 18
+  override final val IntReq = 6 to 18
+  override final val WisReq = 3 to 17
+  override final val ChaReq = 3 to 18
 
   // Racial Ability Adjustments
 

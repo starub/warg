@@ -24,23 +24,13 @@ final object Dwarf extends Race {
 
   // Racial Ability Requirements
 
-  override final val MinStr = 8
-  override final val MaxStr = 18
+  override final val StrReq = 8 to 18
+  override final val DexReq = 3 to 17
+  override final val ConReq = 11 to 18
 
-  override final val MinDex = 3
-  override final val MaxDex = 17
-
-  override final val MinCon = 11
-  override final val MaxCon = 18
-
-  override final val MinInt = 3
-  override final val MaxInt = 18
-
-  override final val MinWis = 3
-  override final val MaxWis = 18
-
-  override final val MinCha = 3
-  override final val MaxCha = 17
+  override final val IntReq = 3 to 18
+  override final val WisReq = 3 to 18
+  override final val ChaReq = 3 to 18
 
   // Racial Ability Adjustments
 
