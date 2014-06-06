@@ -33,23 +33,20 @@ final object AvailableRacesChecker {
     require(races != null && races.length > 0, "Races collection is null or empty")
     require(abilities != null && abilities.length > 0, "Abilities collection is null or empty")
 
-    var result: Set[Race] = Set()
-
-    races.foreach(race => abilities.foreach(ability => {
+    def isSupported(race: Race, ability: Ability): Boolean = {
       ability.Name match {
-        case Strength.Name => if ((race.MinStr to race.MaxStr).contains(ability.score)) result += race
-        case Dexterity.Name => if ((race.MinDex to race.MaxDex).contains(ability.score)) result += race
-        case Constitution.Name => if ((race.MinCon to race.MaxCon).contains(ability.score)) result += race
-
-        case Intelligence.Name => if ((race.MinInt to race.MaxInt).contains(ability.score)) result += race
-        case Wisdom.Name => if ((race.MinWis to race.MaxWis).contains(ability.score)) result += race
-        case Charisma.Name => if ((race.MinCha to race.MaxCha).contains(ability.score)) result += race
+        case Strength.Name => (race.MinStr to race.MaxStr).contains(ability.score)
+        case Dexterity.Name => (race.MinDex to race.MaxDex).contains(ability.score)
+        case Constitution.Name => (race.MinCon to race.MaxCon).contains(ability.score)
+        case Intelligence.Name => (race.MinInt to race.MaxInt).contains(ability.score)
+        case Wisdom.Name => (race.MinWis to race.MaxWis).contains(ability.score)
+        case Charisma.Name => (race.MinCha to race.MaxCha).contains(ability.score)
 
         case _ => throw new IllegalArgumentException("Unknown ability : " + ability.Name)
       }
-    }))
+    }
 
-    result.toList
+    races.filter(race => abilities.forall(ability => isSupported(race, ability)))
   }
 
 }
