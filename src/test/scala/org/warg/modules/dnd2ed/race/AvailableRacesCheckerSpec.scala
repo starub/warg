@@ -25,7 +25,7 @@ class AvailableRacesCheckerSpec extends FlatSpec {
 
   behavior of "available races checker based on mix/max values of each race abilities"
 
-  it should "suggest only human because Str and Dex character rolls are below the  minimum threshold" in {
+  it should "suggest only human because character rolls are below the  minimum threshold" in {
 
     var dummy: Race = new Race {
 
@@ -34,6 +34,19 @@ class AvailableRacesCheckerSpec extends FlatSpec {
 
       override val MinDex = 5
       override val MaxDex = 5
+
+      override val MinCon = 5
+      override val MaxCon = 5
+
+      override val MinInt = 5
+      override val MaxInt = 5
+
+      override val MinWis = 5
+      override val MaxWis = 5
+
+      override val MinCha = 5
+      override val MaxCha = 5
+
     }
 
     var races: List[Race] = List(Human, dummy)
@@ -41,10 +54,16 @@ class AvailableRacesCheckerSpec extends FlatSpec {
 
     character.Str.score = 3
     character.Dex.score = 3
+    character.Con.score = 3
 
-    var result = AvailableRacesChecker.findAvailableRaces(races, character.abilities)
+    character.Int.score = 3
+    character.Cha.score = 3
+    character.Wis.score = 3
     
-    // assert(result.size == 1 && !result.contains(dummy))
+    
+    var result = AvailableRacesChecker.findAvailableRaces(races, character.abilities)
+
+     assert(result.size == 1 && result(0) == Human)
   }
 
 }
