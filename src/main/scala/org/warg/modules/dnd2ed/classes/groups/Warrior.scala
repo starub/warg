@@ -18,6 +18,6 @@
  */
 package org.warg.modules.dnd2ed.classes.groups
 
-object Warrior extends Group {
+trait Warrior extends Group {
 
 }

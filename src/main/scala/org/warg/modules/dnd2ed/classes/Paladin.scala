@@ -16,8 +16,10 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.classes.groups
+package org.warg.modules.dnd2ed.classes
 
-trait Rogue extends Group {
+import org.warg.modules.dnd2ed.classes.groups.Warrior
+
+object Paladin extends Warrior with Class {
 
 }

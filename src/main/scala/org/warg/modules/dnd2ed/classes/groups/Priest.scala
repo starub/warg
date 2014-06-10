@@ -18,6 +18,6 @@
  */
 package org.warg.modules.dnd2ed.classes.groups
 
-object Priest extends Group {
+trait Priest extends Group {
 
 }

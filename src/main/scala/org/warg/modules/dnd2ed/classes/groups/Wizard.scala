@@ -18,6 +18,6 @@
  */
 package org.warg.modules.dnd2ed.classes.groups
 
-object Wizard extends Group {
+trait Wizard extends Group {
 
 }
