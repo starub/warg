@@ -20,12 +20,16 @@ package org.warg.modules.dnd2ed.dices
 
 final object DiceRoller {
 
-  final def d20(times: Int) = {
-    roll(times, D20Dice)
-  }
-
   final def d6(times: Int) = {
     roll(times, D6Dice)
+  }
+
+  final def d10(times: Int) = {
+    roll(times, D10Dice)
+  }
+
+  final def d20(times: Int) = {
+    roll(times, D20Dice)
   }
 
   final def roll(times: Int, dice: Dice) = {

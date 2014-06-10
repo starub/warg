@@ -18,34 +18,33 @@
  */
 package org.warg.modules.dnd2ed.character
 
+import org.warg.modules.dnd2ed.abilities.Ability
 import org.warg.modules.dnd2ed.abilities.Charisma
 import org.warg.modules.dnd2ed.abilities.Constitution
 import org.warg.modules.dnd2ed.abilities.Dexterity
 import org.warg.modules.dnd2ed.abilities.Intelligence
 import org.warg.modules.dnd2ed.abilities.Strength
 import org.warg.modules.dnd2ed.abilities.Wisdom
-import org.warg.modules.dnd2ed.abilities.Charisma
-import org.warg.modules.dnd2ed.races.Race
-import org.warg.modules.dnd2ed.races.Human
 import org.warg.modules.dnd2ed.classes.ClassGroup
 import org.warg.modules.dnd2ed.classes.Warrior
+import org.warg.modules.dnd2ed.races.Human
 import org.warg.modules.dnd2ed.races.Race
 
 final class Character {
 
-  final val Str = Strength
+  final val Str: Ability = Strength
 
-  final val Dex = Dexterity
+  final val Dex: Ability = Dexterity
 
-  final val Con = Constitution
+  final val Con: Ability = Constitution
 
-  final val Int = Intelligence
+  final val Int: Ability = Intelligence
 
-  final val Wis = Wisdom
+  final val Wis: Ability = Wisdom
 
-  final val Cha = Charisma
+  final val Cha: Ability = Charisma
 
-  final val abilities = Set(Str, Dex, Con, Int, Wis, Cha)
+  final val abilities: Set[Ability] = Set(Str, Dex, Con, Int, Wis, Cha)
 
   var race: Race = Human
 
