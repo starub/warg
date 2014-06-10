@@ -25,8 +25,8 @@ import org.warg.modules.dnd2ed.abilities.Dexterity
 import org.warg.modules.dnd2ed.abilities.Intelligence
 import org.warg.modules.dnd2ed.abilities.Strength
 import org.warg.modules.dnd2ed.abilities.Wisdom
-import org.warg.modules.dnd2ed.classes.ClassGroup
-import org.warg.modules.dnd2ed.classes.Warrior
+import org.warg.modules.dnd2ed.classes.groups.Group
+import org.warg.modules.dnd2ed.classes.groups.Warrior
 import org.warg.modules.dnd2ed.races.Human
 import org.warg.modules.dnd2ed.races.Race
 
@@ -48,6 +48,6 @@ final class Character {
 
   var race: Race = Human
 
-  var classGroup: ClassGroup = Warrior
+  var group: Group = Warrior
 
 }

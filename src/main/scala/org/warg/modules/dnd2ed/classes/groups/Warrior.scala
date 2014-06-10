@@ -16,8 +16,8 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.classes
+package org.warg.modules.dnd2ed.classes.groups
 
-object Rogue extends ClassGroup {
+object Warrior extends Group {
 
 }

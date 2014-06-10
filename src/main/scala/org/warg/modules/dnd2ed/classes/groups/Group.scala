@@ -16,10 +16,8 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.classes
+package org.warg.modules.dnd2ed.classes.groups
 
-trait ClassGroup {
-
-  final def classGroups: Set[ClassGroup] = Set(Warrior, Wizard, Priest, Rogue)
+trait Group {
 
 }
