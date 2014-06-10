@@ -16,16 +16,10 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.dice
+package org.warg.modules.dnd2ed.abilities
 
-import scala.util.Random
+final object Strength extends Ability {
 
-trait Dice {
-
-  val sides = 0 to 0
-
-  final def roll(): Int = {
-    sides(Random.nextInt(sides length))
-  }
+  override final val Name = "Strength"
 
 }

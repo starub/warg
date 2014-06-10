@@ -18,7 +18,7 @@
  */
 package org.warg.modules.dnd2ed.generators
 
-import org.warg.modules.dnd2ed.dice.DiceRoller
+import org.warg.modules.dnd2ed.dices.DiceRoller
 
 final object SimpleAbilityScoreGenerator extends AbilityScoreGenerator {
 

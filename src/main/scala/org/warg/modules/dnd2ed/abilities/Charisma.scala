@@ -16,10 +16,10 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.ability
+package org.warg.modules.dnd2ed.abilities
 
-final object Dexterity extends Ability {
+final object Charisma extends Ability {
 
-  override final val Name = "Dexterity"
+  override final val Name = "Charisma"
 
 }

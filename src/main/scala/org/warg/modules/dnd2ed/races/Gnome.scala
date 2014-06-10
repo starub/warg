@@ -16,7 +16,7 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.race
+package org.warg.modules.dnd2ed.races
 
 final object Gnome extends Race {
 

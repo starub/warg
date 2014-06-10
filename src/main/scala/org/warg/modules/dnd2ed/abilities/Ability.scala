@@ -16,10 +16,12 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.ability
+package org.warg.modules.dnd2ed.abilities
 
-final object Charisma extends Ability {
+trait Ability {
 
-  override final val Name = "Charisma"
+  val Name = "Generic Ability"
+
+  var score: Int = 0
 
 }

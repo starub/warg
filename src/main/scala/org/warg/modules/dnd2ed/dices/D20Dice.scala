@@ -16,12 +16,9 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.ability
+package org.warg.modules.dnd2ed.dices
 
-trait Ability {
+final object D20Dice extends Dice {
 
-  val Name = "Generic Ability"
-
-  var score: Int = 0
-
+  override final val sides = 1 to 20
 }

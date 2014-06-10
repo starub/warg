@@ -16,10 +16,25 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.race
+package org.warg.modules.dnd2ed.races
 
-final object Human extends Race {
+final object Halfling extends Race {
 
-  override final val Name = "Human"
+  override final val Name = "Halfling"
+
+  // Racial Ability Requirements
+
+  override final val StrReq = 7 to 18
+  override final val DexReq = 7 to 18
+  override final val ConReq = 10 to 18
+
+  override final val IntReq = 6 to 18
+  override final val WisReq = 3 to 17
+  override final val ChaReq = 3 to 18
+
+  // Racial Ability Adjustments
+
+  override final val DexAdj = 1
+  override final val StrAdj = -1
 
 }

@@ -16,15 +16,15 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.race
+package org.warg.modules.dnd2ed.races
 
-import org.warg.modules.dnd2ed.ability.Ability
-import org.warg.modules.dnd2ed.ability.Charisma
-import org.warg.modules.dnd2ed.ability.Constitution
-import org.warg.modules.dnd2ed.ability.Dexterity
-import org.warg.modules.dnd2ed.ability.Intelligence
-import org.warg.modules.dnd2ed.ability.Strength
-import org.warg.modules.dnd2ed.ability.Wisdom
+import org.warg.modules.dnd2ed.abilities.Ability
+import org.warg.modules.dnd2ed.abilities.Charisma
+import org.warg.modules.dnd2ed.abilities.Constitution
+import org.warg.modules.dnd2ed.abilities.Dexterity
+import org.warg.modules.dnd2ed.abilities.Intelligence
+import org.warg.modules.dnd2ed.abilities.Strength
+import org.warg.modules.dnd2ed.abilities.Wisdom
 
 final object AvailableRacesChecker {
 

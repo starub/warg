@@ -16,10 +16,25 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.ability
+package org.warg.modules.dnd2ed.races
 
-final object Strength extends Ability {
+final object Dwarf extends Race {
 
-  override final val Name = "Strength"
+  override final val Name = "Dwarf"
+
+  // Racial Ability Requirements
+
+  override final val StrReq = 8 to 18
+  override final val DexReq = 3 to 17
+  override final val ConReq = 11 to 18
+
+  override final val IntReq = 3 to 18
+  override final val WisReq = 3 to 18
+  override final val ChaReq = 3 to 18
+
+  // Racial Ability Adjustments
+
+  override final val ConAdj = 1
+  override final val ChaAdj = -1
 
 }

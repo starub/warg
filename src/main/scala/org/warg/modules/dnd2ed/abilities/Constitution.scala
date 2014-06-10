@@ -16,10 +16,10 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.dice
+package org.warg.modules.dnd2ed.abilities
 
-final object D6Dice extends Dice {
+final object Constitution extends Ability {
 
-  override final val sides = 1 to 6
+  override final val Name = "Constitution"
 
 }

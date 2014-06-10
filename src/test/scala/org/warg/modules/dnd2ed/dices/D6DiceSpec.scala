@@ -16,25 +16,20 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.race
+package org.warg.modules.dnd2ed.dices
 
-final object Halfling extends Race {
+import org.scalatest.FlatSpec
 
-  override final val Name = "Halfling"
+class D6DiceSpec extends FlatSpec {
 
-  // Racial Ability Requirements
+  behavior of "standard 6-sided dice"
 
-  override final val StrReq = 7 to 18
-  override final val DexReq = 7 to 18
-  override final val ConReq = 10 to 18
+  it should "roll non-zero values from 1 to 6 inclusive only" in {
 
-  override final val IntReq = 6 to 18
-  override final val WisReq = 3 to 17
-  override final val ChaReq = 3 to 18
-
-  // Racial Ability Adjustments
-
-  override final val DexAdj = 1
-  override final val StrAdj = -1
+    for (i <- 1 to 10000) {
+      var roll = D6Dice.roll()
+      assert(roll != 0 && roll >= 1 && roll <= 6)
+    }
+  }
 
 }

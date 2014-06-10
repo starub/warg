@@ -18,15 +18,18 @@
  */
 package org.warg.modules.dnd2ed.character
 
-import org.warg.modules.dnd2ed.ability.Charisma
-import org.warg.modules.dnd2ed.ability.Constitution
-import org.warg.modules.dnd2ed.ability.Dexterity
-import org.warg.modules.dnd2ed.ability.Intelligence
-import org.warg.modules.dnd2ed.ability.Strength
-import org.warg.modules.dnd2ed.ability.Wisdom
-import org.warg.modules.dnd2ed.race.Human
-import org.warg.modules.dnd2ed.race.Race
-import org.warg.modules.dnd2ed.ability.Charisma
+import org.warg.modules.dnd2ed.abilities.Charisma
+import org.warg.modules.dnd2ed.abilities.Constitution
+import org.warg.modules.dnd2ed.abilities.Dexterity
+import org.warg.modules.dnd2ed.abilities.Intelligence
+import org.warg.modules.dnd2ed.abilities.Strength
+import org.warg.modules.dnd2ed.abilities.Wisdom
+import org.warg.modules.dnd2ed.abilities.Charisma
+import org.warg.modules.dnd2ed.races.Race
+import org.warg.modules.dnd2ed.races.Human
+import org.warg.modules.dnd2ed.classes.ClassGroup
+import org.warg.modules.dnd2ed.classes.Warrior
+import org.warg.modules.dnd2ed.races.Race
 
 final class Character {
 
@@ -45,5 +48,7 @@ final class Character {
   final val abilities = Set(Str, Dex, Con, Int, Wis, Cha)
 
   var race: Race = Human
+
+  var classGroup: ClassGroup = Warrior
 
 }

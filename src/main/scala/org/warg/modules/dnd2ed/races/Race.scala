@@ -16,20 +16,38 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.dice
+package org.warg.modules.dnd2ed.races
 
-import org.scalatest.FlatSpec
+trait Race {
 
-class D6DiceSpec extends FlatSpec {
+  val Name = "Generic race"
 
-  behavior of "standard 6-sided dice"
+  // Racial Ability Requirements
 
-  it should "roll non-zero values from 1 to 6 inclusive only" in {
+  val StrReq = 3 to 18
 
-    for (i <- 1 to 10000) {
-      var roll = D6Dice.roll()
-      assert(roll != 0 && roll >= 1 && roll <= 6)
-    }
+  val DexReq = 3 to 18
+
+  val ConReq = 3 to 18
+
+  val IntReq = 3 to 18
+
+  val WisReq = 3 to 18
+
+  val ChaReq = 3 to 18
+
+  // Racial Ability Adjustments
+
+  val StrAdj = 0
+  val DexAdj = 0
+  val ConAdj = 0
+
+  val IntAdj = 0
+  val WisAdj = 0
+  val ChaAdj = 0
+
+  override def toString = {
+    Name
   }
 
 }

@@ -16,10 +16,16 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.ability
+package org.warg.modules.dnd2ed.dices
 
-final object Wisdom extends Ability {
+import scala.util.Random
 
-  override final val Name = "Wisdom"
+trait Dice {
+
+  def sides = 0 to 0
+
+  final def roll(): Int = {
+    sides(Random.nextInt(sides length))
+  }
 
 }

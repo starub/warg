@@ -16,29 +16,10 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.dice
+package org.warg.modules.dnd2ed.races
 
-final object DiceRoller {
+final object Human extends Race {
 
-  final def d20(times: Int) = {
-    roll(times, D20Dice)
-  }
-
-  final def d6(times: Int) = {
-    roll(times, D6Dice)
-  }
-
-  final def roll(times: Int, dice: Dice) = {
-
-    require(times > 0, "Roll count <= 0")
-    require(dice != null, "Dice is null")
-
-    var total = 0
-
-    (1 to times) foreach (time => (total += dice.roll()))
-
-    total
-  }
+  override final val Name = "Human"
 
 }
-

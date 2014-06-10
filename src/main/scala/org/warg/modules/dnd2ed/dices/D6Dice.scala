@@ -16,10 +16,10 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.ability
+package org.warg.modules.dnd2ed.dices
 
-final object Intelligence extends Ability {
+final object D6Dice extends Dice {
 
-  override final val Name = "Intelligence"
+  override final val sides = 1 to 6
 
 }

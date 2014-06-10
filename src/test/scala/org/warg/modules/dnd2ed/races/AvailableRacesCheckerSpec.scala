@@ -16,7 +16,7 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.race
+package org.warg.modules.dnd2ed.races
 
 import org.scalatest.FlatSpec
 import org.warg.modules.dnd2ed.character.Character

@@ -16,38 +16,10 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.race
+package org.warg.modules.dnd2ed.abilities
 
-trait Race {
+final object Wisdom extends Ability {
 
-  val Name = "Generic race"
-
-  // Racial Ability Requirements
-
-  val StrReq = 3 to 18
-
-  val DexReq = 3 to 18
-
-  val ConReq = 3 to 18
-
-  val IntReq = 3 to 18
-
-  val WisReq = 3 to 18
-
-  val ChaReq = 3 to 18
-
-  // Racial Ability Adjustments
-
-  val StrAdj = 0
-  val DexAdj = 0
-  val ConAdj = 0
-
-  val IntAdj = 0
-  val WisAdj = 0
-  val ChaAdj = 0
-
-  override def toString = {
-    Name
-  }
+  override final val Name = "Wisdom"
 
 }

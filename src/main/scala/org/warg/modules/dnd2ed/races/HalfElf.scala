@@ -16,8 +16,20 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.character
+package org.warg.modules.dnd2ed.races
 
-trait Class {
+final object HalfElf extends Race {
+
+  override final val Name = "HalfElf"
+
+  // Racial Ability Requirements
+
+  override final val StrReq = 3 to 18
+  override final val DexReq = 6 to 18
+  override final val ConReq = 6 to 18
+
+  override final val IntReq = 4 to 18
+  override final val WisReq = 3 to 18
+  override final val ChaReq = 3 to 18
 
 }

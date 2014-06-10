@@ -16,25 +16,29 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.race
+package org.warg.modules.dnd2ed.dices
 
-final object Elf extends Race {
+final object DiceRoller {
 
-  override final val Name = "Elf"
+  final def d20(times: Int) = {
+    roll(times, D20Dice)
+  }
 
-  // Racial Ability Requirements
+  final def d6(times: Int) = {
+    roll(times, D6Dice)
+  }
 
-  override final val StrReq = 3 to 18
-  override final val DexReq = 6 to 18
-  override final val ConReq = 7 to 18
+  final def roll(times: Int, dice: Dice) = {
 
-  override final val IntReq = 8 to 18
-  override final val WisReq = 3 to 18
-  override final val ChaReq = 3 to 18
+    require(times > 0, "Roll count <= 0")
+    require(dice != null, "Dice is null")
 
-  // Racial Ability Adjustments
+    var total = 0
 
-  override final val ConAdj = -1
-  override final val DexAdj = 1
+    (1 to times) foreach (time => (total += dice.roll()))
+
+    total
+  }
 
 }
+

@@ -16,9 +16,10 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.dice
+package org.warg.modules.dnd2ed.abilities
 
-final object D20Dice extends Dice {
+final object Intelligence extends Ability {
 
-  override final val sides = 1 to 20
+  override final val Name = "Intelligence"
+
 }
