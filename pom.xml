@@ -1,42 +1,41 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.warg</groupId>
 	<artifactId>warg</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>warg</name>
-	<url>https://github.com/starub/warg</url>
-	<organization>
-		<name>Stanislavs Rubens</name>
-	</organization>
+	<version>1.0-SNAPSHOT</version>
+	<name>${project.artifactId}</name>
+	<description>warg - RPG rule engine</description>
+	<inceptionYear>2014</inceptionYear>
+	<licenses>
+		<license>
+			<name>GNU GPLv3</name>
+			<url>http://github.com/starub/warg</url>
+			<distribution>master</distribution>
+		</license>
+	</licenses>
+
+	<properties>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+		<encoding>UTF-8</encoding>
+		<scala.tools.version>2.10</scala.tools.version>
+		<scala.version>2.10.4</scala.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.scalatest</groupId>
+			<artifactId>scalatest_2.10</artifactId>
+			<version>2.2.0</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<sourceDirectory>src/main/scala</sourceDirectory>
 		<testSourceDirectory>src/test/scala</testSourceDirectory>
-		<resources>
-			<resource>
-				<directory>src/main/scala</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</resource>
-		</resources>
-		<testResources>
-			<testResource>
-				<directory>src/test/scala</directory>
-				<excludes>
-					<exclude>**/*.java</exclude>
-				</excludes>
-			</testResource>
-		</testResources>
 		<plugins>
-			<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
-				<configuration>
-					<source />
-					<target />
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -65,12 +64,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	<dependencies>
-		<dependency>
-			<groupId>org.scalatest</groupId>
-			<artifactId>scalatest_2.11</artifactId>
-			<version>2.2.0</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
 </project> 
