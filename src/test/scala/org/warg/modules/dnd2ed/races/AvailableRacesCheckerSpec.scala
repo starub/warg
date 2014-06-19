@@ -42,13 +42,13 @@ class AvailableRacesCheckerSpec extends FlatSpec {
     var races: Set[Race] = Set(Human, dummy)
     var character = new Character
 
-    character.Str.score = 3
-    character.Dex.score = 3
-    character.Con.score = 3
+    character.str.score = 3
+    character.dex.score = 3
+    character.con.score = 3
 
-    character.Int.score = 3
-    character.Cha.score = 3
-    character.Wis.score = 3
+    character.int.score = 3
+    character.cha.score = 3
+    character.wis.score = 3
 
     var result = AvailableRacesChecker.findAvailableRaces(races, character.abilities)
 

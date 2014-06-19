@@ -18,8 +18,10 @@
  */
 package org.warg.modules.dnd2ed.classes
 
-import org.warg.modules.dnd2ed.classes.groups.Warrior
+import org.warg.modules.dnd2ed.classes.archetypes.Warrior
 
-object Fighter extends Warrior with Class {
+object Fighter extends Warrior {
+
+  minStr.score = 9
 
 }

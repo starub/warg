@@ -18,16 +18,14 @@
  */
 package org.warg.modules.dnd2ed.classes
 
-import org.warg.modules.dnd2ed.classes.archetypes.Warrior
+import org.warg.modules.dnd2ed.classes.archetypes.Rogue
 
-object Paladin extends Warrior {
+object Bard extends Rogue {
 
-  minStr.score = 12
-  
-  minCon.score = 9
-  
-  minWis.score = 13
-  
-  minCha.score = 17
+  minDex.score = 12
+
+  minInt.score = 13
+
+  minCha.score = 15
 
 }

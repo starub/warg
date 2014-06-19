@@ -16,18 +16,8 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.classes
+package org.warg.modules.dnd2ed.classes.archetypes
 
-import org.warg.modules.dnd2ed.classes.archetypes.Warrior
-
-object Paladin extends Warrior {
-
-  minStr.score = 12
-  
-  minCon.score = 9
-  
-  minWis.score = 13
-  
-  minCha.score = 17
+trait Rogue extends Class {
 
 }

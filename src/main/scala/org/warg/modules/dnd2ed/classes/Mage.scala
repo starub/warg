@@ -16,8 +16,12 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.classes.groups
+package org.warg.modules.dnd2ed.classes
 
-trait Priest extends Group {
+import org.warg.modules.dnd2ed.classes.archetypes.Wizard
+
+object Mage extends Wizard {
+
+  minInt.score = 9
 
 }

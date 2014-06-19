@@ -16,7 +16,8 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.character
+
+package org.warg.modules.dnd2ed.classes.archetypes
 
 import org.warg.modules.dnd2ed.abilities.Ability
 import org.warg.modules.dnd2ed.abilities.Charisma
@@ -25,28 +26,21 @@ import org.warg.modules.dnd2ed.abilities.Dexterity
 import org.warg.modules.dnd2ed.abilities.Intelligence
 import org.warg.modules.dnd2ed.abilities.Strength
 import org.warg.modules.dnd2ed.abilities.Wisdom
-import org.warg.modules.dnd2ed.classes.Fighter
-import org.warg.modules.dnd2ed.races.Human
-import org.warg.modules.dnd2ed.races.Race
 
-final class Character {
+trait Class {
 
-  final val str: Ability = Strength
+  final val minStr: Ability = Strength
 
-  final val dex: Ability = Dexterity
+  final val minDex: Ability = Dexterity
 
-  final val con: Ability = Constitution
+  final val minCon: Ability = Constitution
 
-  final val int: Ability = Intelligence
+  final val minInt: Ability = Intelligence
 
-  final val wis: Ability = Wisdom
+  final val minWis: Ability = Wisdom
 
-  final val cha: Ability = Charisma
+  final val minCha: Ability = Charisma
 
-  final val abilities: Set[Ability] = Set(str, dex, con, int, wis, cha)
-
-  var race: Race = Human
-
-  var klass: org.warg.modules.dnd2ed.classes.archetypes.Class = Fighter
+  final val abilities: Set[Ability] = Set(minStr, minDex, minCon, minInt, minWis, minCha)
 
 }

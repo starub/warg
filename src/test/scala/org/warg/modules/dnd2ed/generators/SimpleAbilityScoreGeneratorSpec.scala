@@ -28,21 +28,21 @@ class SimpleAbilityScoreGeneratorSpec extends FlatSpec {
 
     var character = new org.warg.modules.dnd2ed.character.Character
 
-    character.Str.score = SimpleAbilityScoreGenerator.generate
-    character.Dex.score = SimpleAbilityScoreGenerator.generate
-    character.Con.score = SimpleAbilityScoreGenerator.generate
+    character.str.score = SimpleAbilityScoreGenerator.generate
+    character.dex.score = SimpleAbilityScoreGenerator.generate
+    character.con.score = SimpleAbilityScoreGenerator.generate
 
-    character.Int.score = SimpleAbilityScoreGenerator.generate
-    character.Wis.score = SimpleAbilityScoreGenerator.generate
-    character.Cha.score = SimpleAbilityScoreGenerator.generate
+    character.int.score = SimpleAbilityScoreGenerator.generate
+    character.wis.score = SimpleAbilityScoreGenerator.generate
+    character.cha.score = SimpleAbilityScoreGenerator.generate
 
-    assert(character.Str.score > 0)
-    assert(character.Dex.score > 0)
-    assert(character.Con.score > 0)
+    assert(character.str.score > 0)
+    assert(character.dex.score > 0)
+    assert(character.con.score > 0)
 
-    assert(character.Int.score > 0)
-    assert(character.Wis.score > 0)
-    assert(character.Cha.score > 0)
+    assert(character.int.score > 0)
+    assert(character.wis.score > 0)
+    assert(character.cha.score > 0)
 
   }
 

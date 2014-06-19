@@ -16,8 +16,12 @@
  *
  * Copyright (C) 2014 Stanislavs Rubens
  */
-package org.warg.modules.dnd2ed.classes.groups
+package org.warg.modules.dnd2ed.classes
 
-trait Warrior extends Group {
+import org.warg.modules.dnd2ed.classes.archetypes.Rogue
+
+object Thief extends Rogue {
+
+  minDex.score = 9
 
 }
